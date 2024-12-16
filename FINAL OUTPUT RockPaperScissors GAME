@@ -1,0 +1,76 @@
+            ###
+import random
+            ###
+playerpt = 0
+compt = 0
+            ###
+print("ROCK,PAPER,SCISSORS GAME")
+            ###
+while True:
+    print("--------------")
+    print("CHOOSE YOUR WEAPON")
+    print("(1 Rock)(2 Paper)(3 Scissors)")
+    print("--------------")
+            ###
+    ch = int(input("Enter choice: "))
+    move = random.randint(1, 3)
+    print("--------------")
+            ###
+    if ch == 1:
+        print("Your choice is: ROCK")
+    if ch == 2:
+        print("Your choice is: PAPER")
+    if ch == 3:
+         print("Your choice is: SCISSORS")
+            ###
+    if move == 1:
+        print("Computer chose: ROCK")
+    if move == 2:
+        print("Computer chose: PAPER")
+    if move == 3:
+         print("Computer chose: SCISSORS")
+    print("--------------")
+            ###
+    if ch == 1 and move == 1:
+        print("IT'S A TIE")
+    if ch == 1 and move == 2:
+        print("COMPUTER WINS")
+        compt += 1
+    if ch == 1 and move == 3:
+        print("PLAYER WINS")
+        playerpt += 1
+    if ch == 2 and move == 1:
+        print("PLAYER WINS")
+        playerpt += 1
+    if ch == 2 and move == 2:
+        print("IT'S A TIE")
+    if ch == 2 and move == 3:
+        print("COMPUTER WINS")
+        compt += 1
+    if ch == 3 and move == 1:
+        print("COMPUTER WINS")
+        compt += 1
+    if ch == 3 and move == 2:
+        print("PLAYER WINS")
+        playerpt += 1
+    if ch == 3 and move == 3:
+        print("IT'S A TIE")
+            ###
+    print("--------------")
+    print("SCOREBOARD")
+    print("Player Score: ",playerpt,"Computer Score: ",compt)
+            ###
+    if playerpt == 5:
+            print("---------------------")
+            print("The Winner is PLAYER!!!")
+            print("---------------------")
+            break
+    if compt == 5:
+            print("---------------------")
+            print("The Winner is COMPUTER!!!")
+            print("---------------------")
+            break  
+
+
+
+

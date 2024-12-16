@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>BLVCKBOIIIII Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+        <div class="Logo">
+        <img src="path.png">
+        </div>
+        <h1>Welcome to my Portfolio</h1>
+        </header>
+        <main>
+            <section class="about">
+                <h2>My Designs</h2>
+                <div class=""gallery-grid">
+                <div class="art-piece"><img src="path.jpg" alt="Art pic"></div>
+                <div class="art-piece"><img src="path.jpg" alt="Art pic"></div>
+                <div class="art-piece"><img src="path.jpg" alt="Art pic"></div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>2024 BLVCKQUATICS. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
