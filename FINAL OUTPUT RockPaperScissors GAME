@@ -5,6 +5,7 @@ playerpt = 0
 compt = 0
             ###
 print("ROCK,PAPER,SCISSORS GAME")
+print("edit sample")
             ###
 while True:
     print("--------------")
