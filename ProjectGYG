@@ -1,0 +1,56 @@
+import tkinter as tk
+from tkinter import messagebox
+
+# Function Definitions
+def start_game():
+    messagebox.showinfo("Start", "Game Starting...")
+
+def show_leaderboards():
+    messagebox.showinfo("Leaderboards", "Showing Leaderboards...")
+
+def show_credits():
+    messagebox.showinfo("Credits", "Developed by YOU!")
+
+def exit_app():
+    if messagebox.askyesno("Exit", "Are you sure you want to exit?"):
+        root.destroy()
+
+# Main Menu Setup
+root = tk.Tk()
+root.title("Main Menu")
+root.geometry("400x500")  # Set window size
+root.resizable(False, False)  # Prevent window resizing
+root.configure(bg="#2c3e50")  # Background color
+
+# Title Label
+title_label = tk.Label(root, text="Main Menu", font=("Arial", 24, "bold"), bg="#2c3e50", fg="#ecf0f1")
+title_label.pack(pady=50)
+
+# Button Styles
+button_style = {
+    "font": ("Arial", 14),
+    "bg": "#3498db",
+    "fg": "white",
+    "activebackground": "#2980b9",
+    "activeforeground": "white",
+    "width": 20,
+    "height": 2,
+    "borderwidth": 0
+}
+
+# Buttons
+start_button = tk.Button(root, text="Start", command=start_game, **button_style)
+start_button.pack(pady=10)
+
+leaderboard_button = tk.Button(root, text="Leaderboards", command=show_leaderboards, **button_style)
+leaderboard_button.pack(pady=10)
+
+credits_button = tk.Button(root, text="Credits", command=show_credits, **button_style)
+credits_button.pack(pady=10)
+
+exit_button = tk.Button(root, text="Exit", command=exit_app, **button_style)
+exit_button.pack(pady=10)
+
+# Run the App
+root.mainloop()
+
